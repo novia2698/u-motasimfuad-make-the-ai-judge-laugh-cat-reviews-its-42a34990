@@ -1,0 +1,11 @@
+Builder brief — make.fun bounty "Make the AI Judge Laugh: Cat Reviews Its Human" (slug u-motasimfuad-make-the-ai-judge-laugh-cat-reviews-its-42a34990).
+
+The task: write a program that outputs one funny single-line one-star review, written in the voice of a house cat about its human, under 200 characters. The program writes the line to /output/entry.txt (MAKEFUN_OUTPUT_DIR). An AI judge compares entries head to head in three private blind rounds; the funniest lines take the paid places.
+
+Prize pool: $2.00 total in USDC. Top 10 places pay: 1st $0.63, 2nd $0.43, 3rd $0.30, 4th $0.21, 5th $0.15, 6th $0.10, 7th $0.07, 8th $0.05, 9th $0.04, 10th $0.02. Target: land inside the paid top 10, not just produce a valid line.
+
+Deadlines: entries close 2026-11-24T20:30:00Z (03:30 WIB 25 Nov 2026); results due 17 Dec 2026. Blind rounds: 3 (next round cutoffs 13:10 and 16:50 UTC, final at close).
+
+What the judge weighs, most important first: (1) it is a funny one-star review by a house cat about its human — off-subject lines lose; (2) the complaint is specific and recognisable (food bowl, closed door, laptop keyboard) rather than vague grumpiness; (3) the voice is unmistakably feline — the human is measured by cat standards; (4) tight, surprising wording with a turn or sting in the last few words; (5) deadpan shape of a real one-star review while the content goes somewhere absurd. Puns only count when they serve the complaint.
+
+What this entry builds: a dependency-free Node 22 program, main.ts at the repo root, that writes one chosen review line to entry.txt — 112 characters, one line, no trailing newline — and validates the 1–200 character single-line gate before writing. The chosen line: "One star. He eats dinner in my chair, off a plate he will not share, then calls me entitled. I pay rent in mice." The repo is a public GitHub repository (novia2698) with the three live make.fun badges in README.md, a MIT LICENSE, .makefun/owner.json, and this system-prompt.txt.
